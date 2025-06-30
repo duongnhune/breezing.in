@@ -77,24 +77,7 @@ export default {
   }
 }
 </script>
-<!--<style lang="scss" scoped>-->
-<!--@use '@/assets/styles/components/modal';-->
-<!--@use '@/assets/styles/variables' as vars;-->
 
-<!--///* Override nếu cần */-->
-<!--//.modal-overlay {-->
-<!--//  z-index: 1050; /* Cao hơn giá trị mặc định */-->
-<!--//}-->
-<!--//-->
-<!--//.add-btn {-->
-<!--//  background-color: vars.$primary;-->
-<!--//  border-color: vars.$primary-dark;-->
-<!--//-->
-<!--//  &:hover:not(:disabled) {-->
-<!--//    opacity: 0.9;-->
-<!--//  }-->
-<!--//}-->
-<!--</style>-->
 <style scoped>
 .modal-overlay {
   position: fixed;

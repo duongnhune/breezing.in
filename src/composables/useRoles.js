@@ -14,7 +14,6 @@ export function useRoles() {
         console.log('Fetching roles...') // Debug log
 
         try {
-            // Mock data - replace with actual API call
             await new Promise(resolve => setTimeout(resolve, 500))
 
             roles.value = [
