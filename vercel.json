@@ -1,11 +1,19 @@
 {
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build"
+    }
+  ],
   "routes": [
     {
-      "handle": "filesystem"
+      "src": "/case-2(?:/.*)?",
+      "dest": "/index.html"
     },
     {
-      "src": "/case-2/.*",
-      "dest": "/case-2/index.html"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
