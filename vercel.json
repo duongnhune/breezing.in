@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "*/**",
+      "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "dist"
@@ -12,10 +12,7 @@
   "routes": [
     {
       "src": "/case-2(.*)",
-      "dest": "/index.html",
-      "headers": {
-        "Content-Type": "text/html"
-      }
+      "dest": "/index.html"
     },
     {
       "src": "/assets/(.*)",

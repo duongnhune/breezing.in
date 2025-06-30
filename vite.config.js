@@ -25,6 +25,7 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: path.resolve(__dirname, 'index.html')
+    }  // <-- This closing brace was missing
   },
   server: {
     historyApiFallback: true
