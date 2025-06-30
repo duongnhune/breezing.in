@@ -1,0 +1,47 @@
+//@use '../variables' as vars;
+//@use '../mixins/flex' as flex;
+//@use '../mixins/transition' as tr;
+//
+//.role {
+//  &-item {
+//    @include flex.flex-between;
+//    width: 100%;
+//    padding: vars.$spacing-2 vars.$spacing-4;
+//    cursor: pointer;
+//    @include tr.transition(background-color);
+//    user-select: none;
+//
+//    &:hover {
+//      background-color: vars.$gray-50;
+//    }
+//
+//    &.selected {
+//      background-color: vars.$gray-100;
+//    }
+//  }
+//
+//  &-info {
+//    @include flex.flex-start;
+//    gap: vars.$spacing-2;
+//  }
+//
+//  &-checkbox {
+//    width: 16px;
+//    height: 16px;
+//    accent-color: vars.$primary;
+//  }
+//
+//  &-name {
+//    color: vars.$gray-700;
+//    font-weight: vars.$font-weight-medium;
+//  }
+//
+//  &-new-badge {
+//    padding: vars.$spacing-1 vars.$spacing-2;
+//    background-color: vars.$yellow-100;
+//    color: vars.$yellow-600;
+//    font-size: vars.$font-size-xs;
+//    font-weight: vars.$font-weight-medium;
+//    border-radius: vars.$border-radius-full;
+//  }
+//}

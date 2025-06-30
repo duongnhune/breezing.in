@@ -1,0 +1,196 @@
+////@use '../variables' as vars;
+////@use '../mixins/flex' as flex;
+////@use '../mixins/transition' as tr;
+////
+////.dropdown {
+////  &-container {
+////    position: relative;
+////    width: 100%;
+////  }
+////
+////  &-trigger {
+////    @include flex.flex-between;
+////    width: 100%;
+////    padding: vars.$spacing-3 vars.$spacing-4;
+////    background: vars.$white;
+////    border: vars.$border-width-2 solid vars.$gray-200;
+////    border-radius: vars.$border-radius-lg;
+////    cursor: pointer;
+////    @include tr.transition(border-color);
+////
+////    &:hover:not(:disabled) {
+////      border-color: vars.$gray-300;
+////    }
+////
+////    &:disabled {
+////      cursor: not-allowed;
+////      opacity: 0.6;
+////    }
+////  }
+////
+////  &-selected-text {
+////    color: vars.$gray-700;
+////    font-weight: vars.$font-weight-medium;
+////  }
+////
+////  &-chevron-icon {
+////    font-size: vars.$font-size-base;
+////    color: vars.$gray-500;
+////    @include tr.transition(transform);
+////
+////    &.rotated {
+////      transform: rotate(180deg);
+////    }
+////  }
+////
+////  &-menu {
+////    position: absolute;
+////    top: calc(100% + vars.$spacing-1);
+////    left: 0;
+////    right: 0;
+////    background: vars.$white;
+////    border: vars.$border-width-1 solid vars.$gray-200;
+////    border-radius: vars.$border-radius-lg;
+////    box-shadow: vars.$shadow-lg;
+////    z-index: vars.$z-index-dropdown;
+////    min-width: 200px;
+////    max-height: 300px;
+////    overflow: hidden;
+////  }
+////
+////  &-content {
+////    padding: vars.$spacing-1 0;
+////  }
+////
+////  &-add-btn {
+////    @include flex.flex-start;
+////    width: 100%;
+////    padding: vars.$spacing-3 vars.$spacing-4;
+////    border: none;
+////    background: none;
+////    cursor: pointer;
+////    color: vars.$gray-500;
+////    border-bottom:
+//
+//
+//@use '../variables' as vars;
+//@use '../mixins/flex' as flex;
+//@use '../mixins/transition' as tr;
+//
+//.dropdown {
+//  &-container {
+//    position: relative;
+//    width: 100%;
+//  }
+//
+//  &-trigger {
+//    @include flex.flex-between;
+//    width: 100%;
+//    padding: vars.$spacing-3 vars.$spacing-4;
+//    background: vars.$white;
+//    border: vars.$border-width-2 solid vars.$gray-200;
+//    border-radius: vars.$border-radius-lg;
+//    cursor: pointer;
+//    @include tr.transition(border-color);
+//
+//    &:hover:not(:disabled) {
+//      border-color: vars.$gray-300;
+//    }
+//
+//    &:disabled {
+//      cursor: not-allowed;
+//      opacity: 0.6;
+//    }
+//  }
+//
+//  &-selected-text {
+//    color: vars.$gray-700;
+//    font-weight: vars.$font-weight-medium;
+//  }
+//
+//  &-chevron-icon {
+//    font-size: vars.$font-size-base;
+//    color: vars.$gray-500;
+//    @include tr.transition(transform);
+//
+//    &.rotated {
+//      transform: rotate(180deg);
+//    }
+//  }
+//
+//  &-menu {
+//    position: absolute;
+//    top: calc(100% + vars.$spacing-1);
+//    left: 0;
+//    right: 0;
+//    background: vars.$white;
+//    border: vars.$border-width-1 solid vars.$gray-200;
+//    border-radius: vars.$border-radius-lg;
+//    box-shadow: vars.$shadow-lg;
+//    z-index: vars.$z-index-dropdown;
+//    min-width: 200px;
+//    max-height: 300px;
+//    overflow: hidden;
+//  }
+//
+//  &-content {
+//    padding: vars.$spacing-1 0;
+//  }
+//
+//  &-add-btn {
+//    @include flex.flex-start;
+//    width: 100%;
+//    padding: vars.$spacing-3 vars.$spacing-4;
+//    border: none;
+//    background: none;
+//    cursor: pointer;
+//    color: vars.$gray-500;
+//    border-bottom: vars.$border-width-1 solid vars.$gray-100;
+//    font-size: vars.$font-size-sm;
+//    @include tr.transition(background-color);
+//
+//    &:hover {
+//      background-color: vars.$gray-50;
+//    }
+//  }
+//
+//  &-plus-icon {
+//    font-size: vars.$font-size-sm;
+//    margin-right: vars.$spacing-2;
+//  }
+//
+//  &-loading-state {
+//    padding: vars.$spacing-4;
+//    text-align: center;
+//    color: vars.$gray-500;
+//    @include flex.flex-center;
+//    font-size: vars.$font-size-sm;
+//  }
+//
+//  &-no-roles {
+//    padding: vars.$spacing-4;
+//    text-align: center;
+//  }
+//
+//  &-roles-list {
+//    max-height: 200px;
+//    overflow-y: auto;
+//
+//    &::-webkit-scrollbar {
+//      width: 6px;
+//    }
+//
+//    &::-webkit-scrollbar-track {
+//      background: vars.$gray-100;
+//    }
+//
+//    &::-webkit-scrollbar-thumb {
+//      background: vars.$gray-300;
+//      border-radius: 3px;
+//
+//      &:hover {
+//        background: vars.$gray-400;
+//      }
+//    }
+//  }
+//}

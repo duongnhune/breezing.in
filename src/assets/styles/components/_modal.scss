@@ -1,0 +1,117 @@
+//@use '../variables' as vars;
+//@use '../mixins/flex' as flex;
+//@use '../mixins/transition' as tr;
+//
+//.modal {
+//  &-overlay {
+//    position: fixed;
+//    top: 0;
+//    left: 0;
+//    right: 0;
+//    bottom: 0;
+//    background-color: rgba(vars.$black, 0.5);
+//    @include flex.flex-center;
+//    z-index: vars.$z-index-modal;
+//  }
+//
+//  &-content {
+//    background: vars.$white;
+//    border-radius: vars.$border-radius-xl;
+//    box-shadow: vars.$shadow-xl;
+//    width: 90%;
+//    max-width: 400px;
+//    overflow: hidden;
+//  }
+//
+//  &-header {
+//    @include flex.flex-between;
+//    padding: vars.$spacing-5;
+//    border-bottom: vars.$border-width-1 solid vars.$gray-200;
+//  }
+//
+//  &-title {
+//    margin: 0;
+//    font-size: vars.$font-size-lg;
+//    font-weight: vars.$font-weight-semibold;
+//    color: vars.$gray-900;
+//  }
+//
+//  &-close-btn {
+//    background: none;
+//    border: none;
+//    cursor: pointer;
+//    padding: vars.$spacing-1;
+//    border-radius: vars.$border-radius-sm;
+//    @include tr.transition;
+//
+//    &:hover {
+//      background-color: vars.$gray-100;
+//    }
+//  }
+//
+//  &-close-icon {
+//    width: 20px;
+//    height: 20px;
+//    color: vars.$gray-500;
+//  }
+//
+//  &-body {
+//    padding: vars.$spacing-5;
+//  }
+//
+//  &-input {
+//    width: 100%;
+//    padding: vars.$spacing-3 vars.$spacing-4;
+//    border: vars.$border-width-2 solid vars.$gray-200;
+//    border-radius: vars.$border-radius-lg;
+//    font-size: vars.$font-size-base;
+//    @include tr.transition(border-color);
+//
+//    &:focus {
+//      outline: none;
+//      border-color: vars.$blue-500;
+//    }
+//  }
+//
+//  &-footer {
+//    @include flex.flex-end;
+//    gap: vars.$spacing-3;
+//    padding: vars.$spacing-5;
+//    border-top: vars.$border-width-1 solid vars.$gray-200;
+//  }
+//
+//  &-btn {
+//    padding: vars.$spacing-2 vars.$spacing-4;
+//    border-radius: vars.$border-radius-md;
+//    font-weight: vars.$font-weight-medium;
+//    cursor: pointer;
+//    @include tr.transition(background-color);
+//  }
+//
+//  &-cancel-btn {
+//    @extend .modal-btn;
+//    background: none;
+//    border: vars.$border-width-1 solid vars.$gray-300;
+//    color: vars.$gray-700;
+//
+//    &:hover {
+//      background-color: vars.$gray-50;
+//    }
+//  }
+//
+//  &-add-btn {
+//    @extend .modal-btn;
+//    background-color: vars.$primary;
+//    border: vars.$border-width-1 solid vars.$primary-dark;
+//    color: vars.$white;
+//
+//    &:hover:not(:disabled) {
+//      opacity: 0.9;
+//    }
+//
+//    &:disabled {
+//      opacity: 0.5;
+//      cursor: not-allowed;
+//    }
+//  }
+//}

@@ -1,0 +1,16 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin transition-smooth {
+  transition: all 0.3s ease;
+}
+
+@mixin hover-scale {
+  &:hover {
+    transform: scale(1.05);
+    @include transition-smooth;
+  }
+}
