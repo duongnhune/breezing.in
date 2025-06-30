@@ -2,18 +2,26 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build"
+      "src": "*/**",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
     }
   ],
   "routes": [
     {
-      "src": "/case-2(?:/.*)?",
-      "dest": "/index.html"
+      "src": "/case-2(.*)",
+      "dest": "/index.html",
+      "headers": {
+        "Content-Type": "text/html"
+      }
     },
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "src": "/assets/(.*)",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000"
+      }
     }
   ]
 }
