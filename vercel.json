@@ -1,0 +1,11 @@
+{
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/case-2/.*",
+      "dest": "/case-2/index.html"
+    }
+  ]
+}
